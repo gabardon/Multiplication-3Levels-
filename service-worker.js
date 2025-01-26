@@ -1,4 +1,4 @@
-const CACHE_NAME = "Multiplication 3Levels V1"; // Update the version when changes are made
+const CACHE_NAME = "Multiplication-3Levels"; // Update the version when changes are made
 const urlsToCache = [
   "/", 
   "/index.html", 
