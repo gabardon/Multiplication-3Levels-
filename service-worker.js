@@ -11,6 +11,7 @@ const urlsToCache = [
   "correct.mp3", // Add any other required assets
   "wrong.mp3", // Add any other required assets
   "/RobotoMono-Bold.ttf",
+  "/RobotoMono-Regular.ttf",
 ];
 
 // Install Event: Cache files
