@@ -7,6 +7,7 @@ const urlsToCache = [
   "/manifest.json", 
   "icon-192x192.png", // Add your image assets
   "icon-512x512.png", // Add your image assets
+  "favicon.ico", // Add your image assets
   "correct.mp3", // Add any other required assets
   "wrong.mp3", // Add any other required assets
 ];
