@@ -4,8 +4,11 @@ const urlsToCache = [
   "/index.html", 
   "/styles.css", 
   "/script.js", 
-  "/images/logo.png", // Add your image assets
-  "/sounds/success.mp3", // Add any other required assets
+  "/manifest.json", 
+  "icon-192x192.png", // Add your image assets
+  "icon-512x512.png", // Add your image assets
+  "correct.mp3", // Add any other required assets
+  "wrong.mp3", // Add any other required assets
 ];
 
 // Install Event: Cache files
