@@ -318,3 +318,19 @@ function stopTimer() {
 function resetLevel() {
     loadLevel(currentLevel);
 }
+
+// Your other game code...
+
+// Register the service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker
+      .register('/service-worker.js')  // This is the relative path
+      .then(registration => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch(err => {
+        console.error('Service Worker registration failed:', err);
+      });
+  });
+}
