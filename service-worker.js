@@ -17,11 +17,15 @@ self.addEventListener("install", (event) => {
   console.log("[Service Worker] Installing...");
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("[Service Worker] Caching all files");
-      return cache.addAll(urlsToCache);
+      return cache.addAll(urlsToCache).catch((error) => {
+        console.error("[Service Worker] Failed to cache files:", error);
+      });
     })
   );
 });
+
+
+
 
 // Activate Event: Clean up old caches
 self.addEventListener("activate", (event) => {
