@@ -325,7 +325,7 @@ function resetLevel() {
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/service-worker.js')  // This is the relative path
+      .register('https://gabardon.github.io/service-worker.js')  // This is the relative path
       .then(registration => {
         console.log('Service Worker registered with scope:', registration.scope);
       })
