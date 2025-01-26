@@ -10,6 +10,7 @@ const urlsToCache = [
   "favicon.ico", // Add your image assets
   "correct.mp3", // Add any other required assets
   "wrong.mp3", // Add any other required assets
+  "/RobotoMono-Bold.ttf",
 ];
 
 // Install Event: Cache files
